@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Ask for confirmation to proceed with the update
-read -r -p "Do you want to update Douyin_TikTok_Download_API? [y/n] " input
+read -r -p "Do you want to update dy-dlp? [y/n] " input
 case $input in
     [yY])
         # Navigate to the project directory or exit if it fails
-        cd /www/wwwroot/Douyin_TikTok_Download_API || { echo "The directory does not exist."; exit 1; }
+        cd /www/wwwroot/dy-dlp || { echo "The directory does not exist."; exit 1; }
 
         # Pull the latest changes from the repository
         git pull
@@ -20,8 +20,8 @@ case $input in
         deactivate
 
         # Restart the service to apply changes
-        echo "Restarting Douyin_TikTok_Download_API service"
-        sudo systemctl restart Douyin_TikTok_Download_API.service
+        echo "Restarting dy-dlp service"
+        sudo systemctl restart dy-dlp.service
         echo "Successfully restarted all services!"
         ;;
     [nN]|*)
