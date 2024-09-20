@@ -24,9 +24,9 @@ sudo mkdir -p /www/wwwroot
 cd /www/wwwroot || { echo "Failed to change directory to /www/wwwroot | 无法切换到目录 /www/wwwroot"; exit 1; }
 
 echo 'Cloning Douyin_TikTok_Download_API.git from Github! | 正在从Github克隆Douyin_TikTok_Download_API.git!'
-sudo git clone https://github.com/Evil0ctal/Douyin_TikTok_Download_API.git
+sudo git clone https://github.com/jeffer-ali/dy-dlp.git
 
-cd Douyin_TikTok_Download_API/ || { echo "Failed to change directory to Douyin_TikTok_Download_API | 无法切换到目录 Douyin_TikTok_Download_API"; exit 1; }
+cd dy-dlp/ || { echo "Failed to change directory to Douyin_TikTok_Download_API | 无法切换到目录 dy-dlp"; exit 1; }
 
 echo 'Creating a virtual environment | 正在创建虚拟环境'
 python3 -m venv venv
